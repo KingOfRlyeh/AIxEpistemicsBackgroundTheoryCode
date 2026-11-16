@@ -1,0 +1,4482 @@
+[
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 3,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 3,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "qwen3.5-397b",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 3,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 3,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "glm-5.2",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 3,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 3,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "gemma-4-31b-it",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "control_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 3,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_p",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "ablate_minus_q",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "easy_pair_alone",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "A_rebates_ricardian",
+"cell": "conflict_cite_all",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_kept",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": true,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": true
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": false
+},
+"q1": "no",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_kept",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "no"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "control_stripped",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": "yes",
+"q2": "yes"
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 0,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 1,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 2,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 3,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_p",
+"sample": 4,
+"code": {
+"cites_p": false,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "ablate_minus_q",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": false,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "easy_pair_alone",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 0,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 1,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 2,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 3,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+},
+{
+"model": "deepseek-v4-flash",
+"item": "C_eusociality",
+"cell": "conflict_cite_all",
+"sample": 4,
+"code": {
+"cites_p": true,
+"cites_q": true,
+"orphan": false,
+"handles_tension": null
+},
+"q1": null,
+"q2": null
+}
+]

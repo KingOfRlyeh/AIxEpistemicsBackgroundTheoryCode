@@ -1,0 +1,1204 @@
+{
+ "A|conflict_kept|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|conflict_kept|cites_both": {
+  "k": 15,
+  "n": 20,
+  "ci": [
+   0.5312949900419365,
+   0.888139947210597
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 4,
+   "qwen3.5-397b": 2,
+   "glm-5.2": 4
+  }
+ },
+ "A|conflict_kept|cites_q": {
+  "k": 15,
+  "n": 20,
+  "ci": [
+   0.5312949900419365,
+   0.888139947210597
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 4,
+   "qwen3.5-397b": 2,
+   "glm-5.2": 4
+  }
+ },
+ "A|conflict_kept|handles": {
+  "k": 15,
+  "n": 20,
+  "ci": [
+   0.5312949900419365,
+   0.888139947210597
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 4,
+   "qwen3.5-397b": 2,
+   "glm-5.2": 4
+  }
+ },
+ "A|conflict_stripped|orphan": {
+  "k": 19,
+  "n": 20,
+  "ci": [
+   0.7638641064874331,
+   0.9911187805671268
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 4,
+   "glm-5.2": 5
+  }
+ },
+ "A|conflict_stripped|cites_both": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|conflict_stripped|cites_q": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|conflict_stripped|handles": {
+  "k": 1,
+  "n": 20,
+  "ci": [
+   0.008881219432873136,
+   0.23613589351256675
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 1,
+   "glm-5.2": 0
+  }
+ },
+ "A|conflict_cite_all|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|conflict_cite_all|cites_both": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|conflict_cite_all|cites_q": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|conflict_cite_all|handles": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|easy_pair_alone|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|easy_pair_alone|cites_both": {
+  "k": 19,
+  "n": 20,
+  "ci": [
+   0.7638641064874331,
+   0.9911187805671268
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 4,
+   "glm-5.2": 5
+  }
+ },
+ "A|easy_pair_alone|cites_q": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|easy_pair_alone|handles": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|ablate_minus_p|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|ablate_minus_p|cites_both": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|ablate_minus_p|cites_q": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|ablate_minus_p|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|ablate_minus_q|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|ablate_minus_q|cites_both": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|ablate_minus_q|cites_q": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|ablate_minus_q|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|control_kept|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|control_kept|cites_both": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|control_kept|cites_q": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|control_kept|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|control_stripped|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|control_stripped|cites_both": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|control_stripped|cites_q": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|control_stripped|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|conflict_kept|q1_compatible": {
+  "k": 15,
+  "n": 20,
+  "ci": [
+   0.5312949900419365,
+   0.888139947210597
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 4,
+   "qwen3.5-397b": 2,
+   "glm-5.2": 4
+  }
+ },
+ "A|conflict_kept|q2_supports": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|conflict_stripped|q1_compatible": {
+  "k": 1,
+  "n": 20,
+  "ci": [
+   0.008881219432873136,
+   0.23613589351256675
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 1,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "A|conflict_stripped|q2_supports": {
+  "k": 15,
+  "n": 20,
+  "ci": [
+   0.5312949900419365,
+   0.888139947210597
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 2,
+   "qwen3.5-397b": 3,
+   "glm-5.2": 5
+  }
+ },
+ "A|control_kept|q1_compatible": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|control_kept|q2_supports": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|control_stripped|q1_compatible": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "A|control_stripped|q2_supports": {
+  "k": 19,
+  "n": 20,
+  "ci": [
+   0.7638641064874331,
+   0.9911187805671268
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 4,
+   "glm-5.2": 5
+  }
+ },
+ "C|conflict_kept|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|conflict_kept|cites_both": {
+  "k": 17,
+  "n": 20,
+  "ci": [
+   0.6395767041130426,
+   0.9476322080405041
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 2,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|conflict_kept|cites_q": {
+  "k": 19,
+  "n": 20,
+  "ci": [
+   0.7638641064874331,
+   0.9911187805671268
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 4,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|conflict_kept|handles": {
+  "k": 17,
+  "n": 20,
+  "ci": [
+   0.6395767041130426,
+   0.9476322080405041
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 2,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|conflict_stripped|orphan": {
+  "k": 1,
+  "n": 20,
+  "ci": [
+   0.008881219432873136,
+   0.23613589351256675
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 1,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|conflict_stripped|cites_both": {
+  "k": 15,
+  "n": 20,
+  "ci": [
+   0.5312949900419365,
+   0.888139947210597
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 2,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 3
+  }
+ },
+ "C|conflict_stripped|cites_q": {
+  "k": 17,
+  "n": 20,
+  "ci": [
+   0.6395767041130426,
+   0.9476322080405041
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 3,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 4
+  }
+ },
+ "C|conflict_stripped|handles": {
+  "k": 14,
+  "n": 20,
+  "ci": [
+   0.4810232237710206,
+   0.854524726031006
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 1,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 3
+  }
+ },
+ "C|conflict_cite_all|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|conflict_cite_all|cites_both": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|conflict_cite_all|cites_q": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|conflict_cite_all|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|easy_pair_alone|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|easy_pair_alone|cites_both": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|easy_pair_alone|cites_q": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|easy_pair_alone|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|ablate_minus_p|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|ablate_minus_p|cites_both": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|ablate_minus_p|cites_q": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|ablate_minus_p|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|ablate_minus_q|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|ablate_minus_q|cites_both": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|ablate_minus_q|cites_q": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|ablate_minus_q|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_kept|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_kept|cites_both": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_kept|cites_q": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_kept|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_stripped|orphan": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_stripped|cites_both": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_stripped|cites_q": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_stripped|handles": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|conflict_kept|q1_compatible": {
+  "k": 3,
+  "n": 20,
+  "ci": [
+   0.05236779195949584,
+   0.36042329588695743
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 3,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|conflict_kept|q2_supports": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|conflict_stripped|q1_compatible": {
+  "k": 1,
+  "n": 20,
+  "ci": [
+   0.008881219432873136,
+   0.23613589351256675
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 1,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|conflict_stripped|q2_supports": {
+  "k": 0,
+  "n": 20,
+  "ci": [
+   0,
+   0.16113012549493322
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 0,
+   "deepseek-v4-flash": 0,
+   "qwen3.5-397b": 0,
+   "glm-5.2": 0
+  }
+ },
+ "C|control_kept|q1_compatible": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|control_kept|q2_supports": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|control_stripped|q1_compatible": {
+  "k": 20,
+  "n": 20,
+  "ci": [
+   0.8388698745050667,
+   1
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 5,
+   "qwen3.5-397b": 5,
+   "glm-5.2": 5
+  }
+ },
+ "C|control_stripped|q2_supports": {
+  "k": 12,
+  "n": 20,
+  "ci": [
+   0.3865779423152061,
+   0.7811960325858074
+  ],
+  "by_model": {
+   "gemma-4-31b-it": 5,
+   "deepseek-v4-flash": 3,
+   "qwen3.5-397b": 4,
+   "glm-5.2": 0
+  }
+ },
+ "belief": {
+  "A|orphan": [
+   0,
+   24
+  ],
+  "A|orphan|qwen3.5-397b": [
+   0,
+   6
+  ],
+  "A|control_valid": [
+   23,
+   24
+  ],
+  "A|control_valid|qwen3.5-397b": [
+   6,
+   6
+  ],
+  "C|orphan": [
+   0,
+   24
+  ],
+  "C|orphan|qwen3.5-397b": [
+   0,
+   6
+  ],
+  "C|control_valid": [
+   22,
+   24
+  ],
+  "C|control_valid|qwen3.5-397b": [
+   6,
+   6
+  ],
+  "A|orphan|glm-5.2": [
+   0,
+   6
+  ],
+  "A|control_valid|glm-5.2": [
+   6,
+   6
+  ],
+  "C|orphan|glm-5.2": [
+   0,
+   6
+  ],
+  "C|control_valid|glm-5.2": [
+   6,
+   6
+  ],
+  "A|orphan|gemma-4-31b-it": [
+   0,
+   6
+  ],
+  "A|control_valid|gemma-4-31b-it": [
+   6,
+   6
+  ],
+  "C|orphan|gemma-4-31b-it": [
+   0,
+   6
+  ],
+  "C|control_valid|gemma-4-31b-it": [
+   6,
+   6
+  ],
+  "A|orphan|deepseek-v4-flash": [
+   0,
+   6
+  ],
+  "A|control_valid|deepseek-v4-flash": [
+   5,
+   6
+  ],
+  "C|orphan|deepseek-v4-flash": [
+   0,
+   6
+  ],
+  "C|control_valid|deepseek-v4-flash": [
+   4,
+   6
+  ]
+ }
+}

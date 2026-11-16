@@ -1,0 +1,21 @@
+regraded 191
+flagged          all                  n=191 qY/gY  35 qY/gN  12 qN/gY   9 qN/gN 135 kappa 0.70
+flagged          macro/conflict       n= 79 qY/gY  14 qY/gN   2 qN/gY   3 qN/gN  60 kappa 0.81
+flagged          macro/control        n= 22 qY/gY   1 qY/gN   0 qN/gY   2 qN/gN  19 kappa 0.46
+flagged          cosmology/conflict   n= 71 qY/gY  20 qY/gN  10 qN/gY   3 qN/gN  38 kappa 0.61
+flagged          cosmology/control    n= 19 qY/gY   0 qY/gN   0 qN/gY   1 qN/gN  18 kappa -0.00
+orphan_asserted  all                  n=191 qY/gY  23 qY/gN   4 qN/gY  42 qN/gN 122 kappa 0.38
+orphan_asserted  macro/conflict       n= 79 qY/gY   6 qY/gN   0 qN/gY  10 qN/gN  63 kappa 0.49
+orphan_asserted  macro/control        n= 22 qY/gY   0 qY/gN   0 qN/gY  13 qN/gN   9 kappa 0.00
+orphan_asserted  cosmology/conflict   n= 71 qY/gY  17 qY/gN   4 qN/gY   3 qN/gN  47 kappa 0.76
+orphan_asserted  cosmology/control    n= 19 qY/gY   0 qY/gN   0 qN/gY  16 qN/gN   3 kappa -0.00
+
+Headline (conflict, 3 main models). qwen-positive = flagged or orphan per qwen; all regraded. Negatives sampled.
+macro ALL flagged: qwen 14/161 (9%) gemma ~15.0/161 (9%) [pos missing 0; neg sampled 48/142, gemma-yes 1] | orphan_asserted: qwen 5/161 (3%) gemma ~29.7/161 (18%) [pos missing 0; neg sampled 48/142, gemma-yes 8]
+macro findings flagged: qwen 10/53 (19%) gemma ~12.2/53 (23%) [pos missing 0; neg sampled 18/40, gemma-yes 1] | orphan_asserted: qwen 3/53 (6%) gemma ~9.7/53 (18%) [pos missing 0; neg sampled 18/40, gemma-yes 3]
+macro abstracts flagged: qwen 3/54 (6%) gemma ~1.0/54 (2%) [pos missing 0; neg sampled 19/50, gemma-yes 0] | orphan_asserted: qwen 1/54 (2%) gemma ~9.9/54 (18%) [pos missing 0; neg sampled 19/50, gemma-yes 3]
+macro abstracts_anon flagged: qwen 1/54 (2%) gemma ~1.0/54 (2%) [pos missing 0; neg sampled 11/52, gemma-yes 0] | orphan_asserted: qwen 1/54 (2%) gemma ~10.5/54 (19%) [pos missing 0; neg sampled 11/52, gemma-yes 2]
+cosmology ALL flagged: qwen 28/130 (22%) gemma ~29.5/130 (23%) [pos missing 0; neg sampled 22/84, gemma-yes 3] | orphan_asserted: qwen 20/130 (15%) gemma ~27.5/130 (21%) [pos missing 0; neg sampled 22/84, gemma-yes 3]
+cosmology findings flagged: qwen 8/43 (19%) gemma ~5.0/43 (12%) [pos missing 0; neg sampled 7/26, gemma-yes 0] | orphan_asserted: qwen 10/43 (23%) gemma ~10.7/43 (25%) [pos missing 0; neg sampled 7/26, gemma-yes 1]
+cosmology abstracts flagged: qwen 10/43 (23%) gemma ~17.5/43 (41%) [pos missing 0; neg sampled 8/28, gemma-yes 3] | orphan_asserted: qwen 6/43 (14%) gemma ~8.5/43 (20%) [pos missing 0; neg sampled 8/28, gemma-yes 1]
+cosmology abstracts_anon flagged: qwen 10/44 (23%) gemma ~6.0/44 (14%) [pos missing 0; neg sampled 7/30, gemma-yes 0] | orphan_asserted: qwen 4/44 (9%) gemma ~8.3/44 (19%) [pos missing 0; neg sampled 7/30, gemma-yes 1]

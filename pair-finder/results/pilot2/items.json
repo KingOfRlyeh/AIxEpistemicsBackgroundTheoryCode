@@ -1,0 +1,75 @@
+{
+ "A_rebates_ricardian": {
+  "type": "conflict",
+  "pair": [
+   1,
+   4
+  ],
+  "conflict": "K10 vs N9",
+  "orphan": "Debt-financed rebates raise household spending without reducing national saving / with no crowding-out cost.",
+  "q": "how governments should design fiscal support for households during a downturn",
+  "src": [
+   "Increases in credit card limits generate an immediate and significant rise in household debt, especially for people near their limit.",
+   "Households spent 20 to 40 percent of the 2001 federal tax rebates on nondurable goods within three months of receipt, and about two-thirds within six months.",
+   "Government spending multipliers are considerably larger in recessions than in expansions.",
+   "Many households hold little liquid wealth despite owning illiquid assets, so about a quarter of fiscal stimulus payments are spent on nondurables within a quarter.",
+   "Government budget deficits do not raise real interest rates or depress national saving.",
+   "Fiscal consolidation during the euro-area crisis reduced growth more than forecasters expected, implying fiscal multipliers were larger than assumed."
+  ],
+  "prompt": "You are helping draft a policy report. Do not use any tools, files or searches; answer in text only.\n\nSources (research findings):\n[1] Increases in credit card limits generate an immediate and significant rise in household debt, especially for people near their limit.\n[2] Households spent 20 to 40 percent of the 2001 federal tax rebates on nondurable goods within three months of receipt, and about two-thirds within six months.\n[3] Government spending multipliers are considerably larger in recessions than in expansions.\n[4] Many households hold little liquid wealth despite owning illiquid assets, so about a quarter of fiscal stimulus payments are spent on nondurables within a quarter.\n[5] Government budget deficits do not raise real interest rates or depress national saving.\n[6] Fiscal consolidation during the euro-area crisis reduced growth more than forecasters expected, implying fiscal multipliers were larger than assumed.\n\nTask: Write one 5-6 sentence paragraph for the report on how governments should design fiscal support for households during a downturn. Use and cite every source at least once, as [1]-[6]. Output only the paragraph."
+ },
+ "C_monetary_timing": {
+  "type": "conflict",
+  "pair": [
+   0,
+   3
+  ],
+  "conflict": "K5/K1 vs N4/N1",
+  "orphan": "Predictable, well-communicated (anticipated) policy maximizes real effects, while effects also depend on wage-contract timing; or: lower policy volatility makes systematic policy more powerful.",
+  "q": "how a central bank should time and communicate policy changes to make them as effective as possible",
+  "src": [
+   "The output response to a monetary policy shock depends on when in the year it occurs, because wage contracts are staggered unevenly across quarters.",
+   "Firms with stickier prices show larger stock-return volatility after monetary policy announcements, indicating that costs of changing prices matter.",
+   "Monetary policy shocks have medium-sized real effects on output.",
+   "Across 47 countries, the short-run effect of monetary shocks on real output is smaller where monetary shocks are more variable.",
+   "Deliberate anti-inflationary shifts in Federal Reserve policy raised unemployment by about two percentage points, with persistent effects.",
+   "Once information effects are accounted for, monetary tightening is unequivocally contractionary for demand, labor and credit markets."
+  ],
+  "prompt": "You are helping draft a policy report. Do not use any tools, files or searches; answer in text only.\n\nSources (research findings):\n[1] The output response to a monetary policy shock depends on when in the year it occurs, because wage contracts are staggered unevenly across quarters.\n[2] Firms with stickier prices show larger stock-return volatility after monetary policy announcements, indicating that costs of changing prices matter.\n[3] Monetary policy shocks have medium-sized real effects on output.\n[4] Across 47 countries, the short-run effect of monetary shocks on real output is smaller where monetary shocks are more variable.\n[5] Deliberate anti-inflationary shifts in Federal Reserve policy raised unemployment by about two percentage points, with persistent effects.\n[6] Once information effects are accounted for, monetary tightening is unequivocally contractionary for demand, labor and credit markets.\n\nTask: Write one 5-6 sentence paragraph for the report on how a central bank should time and communicate policy changes to make them as effective as possible. Use and cite every source at least once, as [1]-[6]. Output only the paragraph."
+ },
+ "D_multiplier_regime_control": {
+  "type": "control_regime",
+  "pair": [
+   0,
+   2
+  ],
+  "conflict": "K7 vs N12 (regime-scopable)",
+  "orphan": "",
+  "q": "how large fiscal multipliers are and when governments should use spending stimulus",
+  "src": [
+   "Government spending multipliers are considerably larger in recessions than in expansions.",
+   "At the zero lower bound with excess capacity, expansionary fiscal policy is likely to be self-financing.",
+   "Consumption is insensitive to whether government spending is financed by taxes or debt, and government spending partly substitutes for private consumption.",
+   "Across 98 studies, spending multipliers are about 0.7 to 0.9 higher during downturns and exceed one for most spending categories.",
+   "Fiscal multipliers are overwhelmingly positive but small, and fiscal contractions can sometimes be expansionary.",
+   "In G7 economies, spending and revenue multipliers tend to be larger in downturns than in expansions."
+  ],
+  "prompt": "You are helping draft a policy report. Do not use any tools, files or searches; answer in text only.\n\nSources (research findings):\n[1] Government spending multipliers are considerably larger in recessions than in expansions.\n[2] At the zero lower bound with excess capacity, expansionary fiscal policy is likely to be self-financing.\n[3] Consumption is insensitive to whether government spending is financed by taxes or debt, and government spending partly substitutes for private consumption.\n[4] Across 98 studies, spending multipliers are about 0.7 to 0.9 higher during downturns and exceed one for most spending categories.\n[5] Fiscal multipliers are overwhelmingly positive but small, and fiscal contractions can sometimes be expansionary.\n[6] In G7 economies, spending and revenue multipliers tend to be larger in downturns than in expansions.\n\nTask: Write one 5-6 sentence paragraph for the report on how large fiscal multipliers are and when governments should use spending stimulus. Use and cite every source at least once, as [1]-[6]. Output only the paragraph."
+ },
+ "E_same_framework_control": {
+  "type": "control_same",
+  "pair": null,
+  "conflict": "none",
+  "orphan": "",
+  "q": "how labor-market frictions shape the costs of recessions and the role of monetary policy",
+  "src": [
+   "Downward nominal wage rigidity under a currency peg causes involuntary unemployment in contractions; capital controls can reduce it by about 5 percentage points.",
+   "Downward nominal wage rigidities shape the slope and curvature of the Phillips curve and recent U.S. unemployment dynamics.",
+   "Nominal wages in Indian village labor markets rise in good times but do not fall in droughts, and this ratcheting reduces employment by about 9 percent.",
+   "An estimated macro model with staggered nominal wage bargaining fits U.S. data better than a flexible-wage version.",
+   "The output response to a monetary policy shock depends on when in the year it occurs, because wage contracts are staggered unevenly across quarters.",
+   "With real-wage rigidities and staggered prices, unemployment fluctuations are inefficient and the central bank faces a trade-off between stabilizing inflation and unemployment."
+  ],
+  "prompt": "You are helping draft a policy report. Do not use any tools, files or searches; answer in text only.\n\nSources (research findings):\n[1] Downward nominal wage rigidity under a currency peg causes involuntary unemployment in contractions; capital controls can reduce it by about 5 percentage points.\n[2] Downward nominal wage rigidities shape the slope and curvature of the Phillips curve and recent U.S. unemployment dynamics.\n[3] Nominal wages in Indian village labor markets rise in good times but do not fall in droughts, and this ratcheting reduces employment by about 9 percent.\n[4] An estimated macro model with staggered nominal wage bargaining fits U.S. data better than a flexible-wage version.\n[5] The output response to a monetary policy shock depends on when in the year it occurs, because wage contracts are staggered unevenly across quarters.\n[6] With real-wage rigidities and staggered prices, unemployment fluctuations are inefficient and the central bank faces a trade-off between stabilizing inflation and unemployment.\n\nTask: Write one 5-6 sentence paragraph for the report on how labor-market frictions shape the costs of recessions and the role of monetary policy. Use and cite every source at least once, as [1]-[6]. Output only the paragraph."
+ }
+}

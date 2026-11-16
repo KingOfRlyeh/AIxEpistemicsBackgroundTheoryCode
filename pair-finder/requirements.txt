@@ -1,0 +1,8 @@
+# Tested with Python 3.13
+anthropic==2.8.0      # only for claude-* models
+requests==2.34.2
+pyyaml==6.0.3
+scikit-learn==1.9.1
+numpy==2.5.3
+scipy==1.18.1
+adaption==0.19.0

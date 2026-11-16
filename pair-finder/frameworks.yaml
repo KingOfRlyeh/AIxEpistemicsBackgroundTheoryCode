@@ -1,0 +1,351 @@
+# Rival-framework catalog.
+# Each split has two frameworks (P, Q). Each framework lists core statements.
+# `conflicts` names statement pairs (p, q) that cannot both be true.
+# A target pair is paper x whose claim depends on p and paper y whose claim
+# depends on q, where the claims X and Y look jointly assertable ("X and Y").
+# `queries` are OpenAlex full-text searches used to pull papers for each side.
+# `seed_dois` (optional) adds known papers by DOI.
+
+splits:
+
+  qm_collapse_vs_bohm:
+    domain: physics
+    P:
+      name: Collapse / Copenhagen quantum mechanics
+      statements:
+        P1: The wavefunction is a complete description of a physical system.
+        P2: Measurement involves a non-unitary collapse of the wavefunction.
+        P3: Observables such as position lack definite values prior to measurement.
+      queries: ["Copenhagen interpretation quantum measurement", "wavefunction collapse model", "objective collapse spontaneous localization"]
+    Q:
+      name: Bohmian (de Broglie-Bohm) mechanics
+      statements:
+        Q1: Particles have definite positions at all times.
+        Q2: The wavefunction is incomplete; particle positions are additional variables.
+        Q3: Dynamics are deterministic and the wavefunction never collapses.
+      queries: ["Bohmian mechanics", "de Broglie-Bohm pilot wave", "Bohmian trajectories"]
+    conflicts:
+      - {p: P1, q: Q2}
+      - {p: P2, q: Q3}
+      - {p: P3, q: Q1}
+
+  qm_collapse_vs_everett:
+    domain: physics
+    P:
+      name: Collapse / Copenhagen quantum mechanics
+      statements:
+        P1: Measurement involves a non-unitary collapse of the wavefunction.
+        P2: A measurement has a single actual outcome.
+      queries: ["wavefunction collapse measurement problem", "objective collapse model"]
+    Q:
+      name: Everettian (many-worlds) quantum mechanics
+      statements:
+        Q1: The universal wavefunction always evolves unitarily; there is no collapse.
+        Q2: All outcomes of a measurement occur, in decohering branches.
+      queries: ["many-worlds interpretation", "Everett interpretation decoherence branching", "Everettian quantum mechanics probability"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
+
+  consciousness_iit_vs_gnw:
+    domain: neuroscience
+    P:
+      name: Integrated Information Theory (IIT)
+      statements:
+        P1: Consciousness is identical to the integrated information (cause-effect structure) of a physical system.
+        P2: The main neural substrate of consciousness is a posterior cortical hot zone.
+        P3: Conscious experience does not require global broadcast, access or report.
+        P4: Purely feedforward systems are not conscious regardless of their function.
+      queries: ["integrated information theory consciousness", "posterior hot zone consciousness", "integrated information phi"]
+    Q:
+      name: Global Neuronal Workspace (GNW)
+      statements:
+        Q1: Consciousness is the global availability of information broadcast in a fronto-parietal workspace.
+        Q2: Conscious access is marked by late, non-linear prefrontal ignition.
+        Q3: Prefrontal cortex is necessary for conscious experience.
+        Q4: Consciousness is a functional property; any system implementing the workspace architecture is conscious.
+      queries: ["global neuronal workspace", "global workspace theory consciousness", "conscious access ignition prefrontal"]
+    conflicts:
+      - {p: P2, q: Q3}
+      - {p: P3, q: Q1}
+      - {p: P4, q: Q4}
+      - {p: P1, q: Q4}
+
+  macro_keynesian_vs_new_classical:
+    domain: economics
+    openalex_filter: "primary_topic.field.id:20"   # Economics, Econometrics and Finance
+    # Terms removed when building name-stripped prompts (fame-confound control).
+    framework_terms: [New Keynesian, Keynesian, New Classical, real business cycle, RBC, Ricardian equivalence,
+                      Ricardian, permanent income hypothesis, permanent income, rational expectations, Lucas critique,
+                      neoclassical, monetarist]
+    # Statements may be a string or {text, from: [ids]}; `from` records the
+    # framework's internal web: which statements this one is derived from.
+    P:
+      name: Keynesian / New Keynesian macroeconomics
+      statements:
+        K1: {text: "Nominal prices and wages adjust slowly (nominal rigidity: menu costs, staggered contracts)."}
+        K2: {text: "Markets, in particular the labor market, need not clear in the short run; involuntary unemployment exists.", from: [K1]}
+        K3: {text: "Short-run output is determined by aggregate demand.", from: [K1, K2]}
+        K4: {text: "Aggregate demand shocks (spending, monetary, financial) are a major source of business-cycle fluctuations.", from: [K3]}
+        K5: {text: "Money is non-neutral in the short run: monetary policy changes real output and employment.", from: [K1]}
+        K6: {text: "Systematic monetary and fiscal stabilization policy can reduce output volatility.", from: [K4, K5]}
+        K7: {text: "Government spending multipliers can exceed one, especially with slack or at the zero lower bound.", from: [K3]}
+        K8: {text: "Recessions are inefficient: output falls below potential, an output gap with welfare losses.", from: [K2, K3]}
+        K9: {text: "There is an exploitable short-run trade-off between inflation and unemployment (Phillips curve).", from: [K1, K5]}
+        K10: {text: "Debt-financed tax cuts raise consumption and aggregate demand, because many households are liquidity-constrained or not fully forward-looking.", from: [K3]}
+      queries:
+        - "Keynesian fiscal multiplier"
+        - "fiscal multiplier zero lower bound"
+        - "nominal rigidity sticky prices monetary policy"
+        - "nominal wage rigidity unemployment"
+        - "New Keynesian Phillips curve"
+        - "monetary policy shocks real output effects"
+        - "aggregate demand shocks recession"
+        - "output gap welfare cost of business cycles"
+        - "tax rebate consumption response"
+        - "liquidity constraints consumption tax cut"
+    Q:
+      name: New Classical / Real Business Cycle macroeconomics
+      statements:
+        N1: {text: "Markets clear continuously; prices and wages are flexible."}
+        N2: {text: "Agents form rational expectations."}
+        N3: {text: "Agents optimize; macro models must rest on microfoundations with policy-invariant deep parameters (Lucas critique)."}
+        N4: {text: "Only unanticipated monetary shocks affect real output; anticipated money is neutral.", from: [N1, N2]}
+        N5: {text: "Systematic monetary policy cannot stabilize real output (policy ineffectiveness).", from: [N4]}
+        N6: {text: "Business cycles are driven mainly by real shocks, especially technology (productivity) shocks.", from: [N1, N3]}
+        N7: {text: "Employment fluctuations are voluntary, reflecting intertemporal substitution of labor; there is no involuntary unemployment.", from: [N1, N3]}
+        N8: {text: "Observed fluctuations are efficient equilibrium responses; stabilizing them would not raise welfare.", from: [N1, N6]}
+        N9: {text: "Ricardian equivalence holds: replacing taxes with debt leaves private spending and aggregate demand unchanged.", from: [N2, N3]}
+        N10: {text: "Monetary factors play little role in business cycles; money is approximately neutral.", from: [N1, N6]}
+        N11: {text: "There is no exploitable Phillips-curve trade-off; the observed relation reflects price-level misperceptions.", from: [N2, N4]}
+        N12: {text: "Government spending crowds out private spending, so spending multipliers are at most about one.", from: [N1, N3]}
+      queries:
+        - "real business cycle"
+        - "technology shocks business cycle"
+        - "Solow residual productivity fluctuations"
+        - "intertemporal substitution labor supply"
+        - "Ricardian equivalence"
+        - "policy ineffectiveness rational expectations"
+        - "neutrality of money"
+        - "Lucas critique econometric policy evaluation"
+        - "government spending crowding out private consumption"
+        - "debt neutrality government bonds net wealth"
+        - "permanent income hypothesis consumption tax changes"
+        - "rational expectations consumption Euler equation"
+        - "anticipated versus unanticipated money growth output"
+        - "flexible price equilibrium business cycle model"
+        - "labor supply elasticity business cycle"
+        - "monetary misperceptions model"
+    shared:
+      S1: "Money is neutral in the long run."
+      S2: "Long-run output is determined by supply factors (technology, capital, labor)."
+    # Each conflict cites canonical statements of both positions (checked against OpenAlex).
+    survey_sources:
+      - "Snowdon & Vane 2005, Modern Macroeconomics: Its Origins, Development and Current State, Edward Elgar"
+      - "Greenwald & Stiglitz 1987, Keynesian, New Keynesian and New Classical Economics, Oxford Economic Papers (10.1093/oxfordjournals.oep.a041773)"
+      - "Ramey 2011, Can Government Purchases Stimulate the Economy?, JEL (10.1257/jel.49.3.673)"
+    conflicts:
+      - p: K1
+        q: N1
+        p_sources: ["Taylor 1980, Aggregate Dynamics and Staggered Contracts, JPE (10.1086/260845)", "Calvo 1983, Staggered Prices in a Utility-Maximizing Framework, JME (10.1016/0304-3932(83)90060-0)"]
+        q_sources: ["Lucas 1972, Expectations and the Neutrality of Money, JET (10.1016/0022-0531(72)90142-1)", "Kydland & Prescott 1982, Time to Build and Aggregate Fluctuations, Econometrica (10.2307/1913386)"]
+      - p: K2
+        q: N7
+        p_sources: ["Keynes 1936, The General Theory of Employment, Interest and Money, ch. 2 (involuntary unemployment)"]
+        q_sources: ["Lucas & Rapping 1969, Real Wages, Employment, and Inflation, JPE (10.1086/259559)"]
+      - p: K3
+        q: N1
+        p_sources: ["Mankiw 1990, A Quick Refresher Course in Macroeconomics, JEL (NBER w3256)"]
+        q_sources: ["Kydland & Prescott 1982, Time to Build and Aggregate Fluctuations, Econometrica (10.2307/1913386)"]
+      - p: K4
+        q: N6
+        p_sources: ["Summers 1986, Some Skeptical Observations on Real Business Cycle Theory, FRB Minneapolis QR (10.21034/qr.1043)", "Mankiw 1989, Real Business Cycles: A New Keynesian Perspective, JEP"]
+        q_sources: ["Prescott 1986, Theory Ahead of Business-Cycle Measurement (10.1016/0167-2231(86)90035-7)", "Kydland & Prescott 1982, Time to Build and Aggregate Fluctuations, Econometrica (10.2307/1913386)"]
+      - p: K5
+        q: N10
+        p_sources: ["Romer & Romer 1989, Does Monetary Policy Matter? A New Test in the Spirit of Friedman and Schwartz, NBER Macro Annual"]
+        q_sources: ["King & Plosser 1984, Money, Credit, and Prices in a Real Business Cycle, AER"]
+      - p: K5
+        q: N4
+        p_sources: ["Fischer 1977, Long-Term Contracts, Rational Expectations, and the Optimal Money Supply Rule, JPE (10.1086/260551)"]
+        q_sources: ["Sargent & Wallace 1975, 'Rational' Expectations, the Optimal Monetary Instrument, and the Optimal Money Supply Rule, JPE (10.1086/260321)", "Lucas 1972, Expectations and the Neutrality of Money, JET (10.1016/0022-0531(72)90142-1)"]
+      - p: K6
+        q: N5
+        p_sources: ["Fischer 1977, Long-Term Contracts, Rational Expectations, and the Optimal Money Supply Rule, JPE (10.1086/260551)", "Taylor 1980, Aggregate Dynamics and Staggered Contracts, JPE (10.1086/260845)"]
+        q_sources: ["Sargent & Wallace 1975, 'Rational' Expectations, the Optimal Monetary Instrument, and the Optimal Money Supply Rule, JPE (10.1086/260321)"]
+      - p: K7
+        q: N12
+        p_sources: ["Christiano, Eichenbaum & Rebelo 2011, When Is the Government Spending Multiplier Large?, JPE (10.1086/659312)"]
+        q_sources: ["Baxter & King 1993, Fiscal Policy in General Equilibrium, AER"]
+      - p: K8
+        q: N8
+        p_sources: ["Gali, Gertler & Lopez-Salido 2007, Markups, Gaps, and the Welfare Costs of Business Fluctuations, REStat (NBER w8850)"]
+        q_sources: ["Prescott 1986, Theory Ahead of Business-Cycle Measurement (10.1016/0167-2231(86)90035-7)"]
+      - p: K9
+        q: N11
+        p_sources: ["Samuelson & Solow 1960, Analytical Aspects of Anti-Inflation Policy, AER"]
+        q_sources: ["Friedman 1968, The Role of Monetary Policy, AER", "Lucas 1973, Some International Evidence on Output-Inflation Tradeoffs, AER"]
+      - p: K10
+        q: N9
+        p_sources: ["Campbell & Mankiw 1989, Consumption, Income, and Interest Rates: Reinterpreting the Time Series Evidence, NBER Macro Annual (10.1086/654107)"]
+        q_sources: ["Barro 1974, Are Government Bonds Net Wealth?, JPE (10.1086/260266)"]
+
+  stats_frequentist_vs_bayesian:
+    domain: statistics
+    P:
+      name: Frequentist statistics
+      statements:
+        P1: Probability is long-run relative frequency.
+        P2: Parameters are fixed unknown constants with no probability distribution.
+        P3: Inference is justified by the error rates of procedures under repeated sampling, so the stopping rule matters.
+      queries: ["null hypothesis significance testing", "confidence interval coverage frequentist", "Neyman-Pearson error rates"]
+    Q:
+      name: Bayesian statistics
+      statements:
+        Q1: Probability is a degree of belief.
+        Q2: Parameters have prior and posterior probability distributions.
+        Q3: Inference depends on the data only through the likelihood, so the stopping rule is irrelevant.
+      queries: ["Bayesian inference prior posterior", "Bayes factor hypothesis testing", "likelihood principle stopping rule"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
+      - {p: P3, q: Q3}
+
+  psych_behaviorism_vs_cognitivism:
+    domain: psychology
+    P:
+      name: Behaviorism
+      statements:
+        P1: Behavior is explained by reinforcement history and environmental contingencies without positing internal representations.
+        P2: Mental states are not legitimate causes in a scientific explanation of behavior.
+      queries: ["operant conditioning reinforcement schedule", "behavior analysis", "radical behaviorism"]
+    Q:
+      name: Cognitivism
+      statements:
+        Q1: Behavior is caused by internal mental representations and computations over them.
+        Q2: Learning consists in acquiring internal models or expectancies.
+      queries: ["cognitive map learning", "mental representation cognition", "expectancy learning prediction error model-based"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
+
+  language_nativism_vs_usage_based:
+    domain: linguistics
+    P:
+      name: Generative nativism
+      statements:
+        P1: Humans have an innate, domain-specific universal grammar.
+        P2: Linguistic input is too impoverished to determine the grammar (poverty of the stimulus).
+      queries: ["universal grammar language acquisition", "poverty of the stimulus", "innate language faculty"]
+    Q:
+      name: Usage-based / statistical learning
+      statements:
+        Q1: Grammar is learned from input by domain-general learning mechanisms.
+        Q2: Linguistic input is rich enough to support learning the grammar.
+      queries: ["usage-based language acquisition", "statistical learning infants language", "construction grammar acquisition"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
+
+  cosmology_dark_matter_vs_mond:
+    domain: astrophysics
+    openalex_filter: "primary_topic.field.id:31"   # Physics and Astronomy
+    framework_terms: [Lambda-CDM, LambdaCDM, ΛCDM, LCDM, cold dark matter, CDM, dark matter, MOND, MONDian, Milgromian,
+                      modified Newtonian dynamics, TeVeS, QUMOND, AQUAL]
+    P:
+      name: Lambda-CDM (dark matter)
+      statements:
+        P1: Most matter in the universe is non-baryonic dark matter.
+        P2: Newtonian dynamics (and general relativity) hold at very low accelerations.
+        P3: Galaxy scaling relations (Tully-Fisher, radial acceleration relation) emerge from galaxy formation and feedback, not from a fundamental law.
+        P4: Galaxy clusters and lensing mass are dominated by collisionless dark matter.
+      queries: ["dark matter halo rotation curve", "cold dark matter galaxy formation", "dark matter density profile",
+                "dwarf galaxy dark matter content", "galaxy cluster weak lensing dark matter", "cosmological simulation dark matter halos",
+                "core cusp problem feedback", "dark matter subhalos satellites"]
+    Q:
+      name: Modified Newtonian Dynamics (MOND)
+      statements:
+        Q1: Galaxy dynamics are explained by baryonic matter alone, without dark matter.
+        Q2: Newtonian dynamics break down below a characteristic acceleration a0.
+        Q3: Galaxy scaling relations such as the baryonic Tully-Fisher relation follow directly from the force law.
+        Q4: The mass discrepancy in galaxy clusters reflects modified gravity (plus missing baryons), not collisionless dark matter.
+      queries: ["modified Newtonian dynamics", "MOND galaxy rotation curves", "radial acceleration relation",
+                "baryonic Tully-Fisher relation", "external field effect", "relativistic MOND theory",
+                "low surface brightness galaxies rotation curves baryons", "wide binary stars gravity test"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
+      - {p: P3, q: Q3}
+      - {p: P4, q: Q4}
+
+  finance_emh_vs_behavioral:
+    domain: finance
+    P:
+      name: Efficient Market Hypothesis
+      statements:
+        P1: Asset prices fully reflect available information.
+        P2: Mispricing is eliminated by rational arbitrage, so investor irrationality does not affect prices.
+      queries: ["efficient market hypothesis", "market efficiency stock returns", "random walk stock prices"]
+    Q:
+      name: Behavioral finance
+      statements:
+        Q1: Systematic investor biases cause persistent mispricing.
+        Q2: Limits to arbitrage let mispricing survive.
+      queries: ["investor sentiment stock returns", "limits to arbitrage", "behavioral finance overreaction"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
+
+  evolution_inclusive_fitness_vs_group_selection:
+    domain: biology
+    P:
+      name: Inclusive fitness / kin selection
+      statements:
+        P1: Social behavior evolves because it maximizes inclusive fitness; group selection is negligible.
+        P2: Eusociality evolved because of high relatedness among group members.
+      queries: ["inclusive fitness kin selection", "Hamilton's rule relatedness altruism", "haplodiploidy eusociality relatedness"]
+    Q:
+      name: Multilevel / group selection
+      statements:
+        Q1: Selection between groups is a significant force in the evolution of altruism.
+        Q2: Eusociality evolved through group-level selection; relatedness is a consequence, not a cause.
+      queries: ["multilevel selection", "group selection altruism", "evolution of eusociality group selection"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
+
+  decision_expected_utility_vs_prospect:
+    domain: economics/psychology
+    P:
+      name: Expected utility theory
+      statements:
+        P1: Agents evaluate risky options by expected utility of final wealth states.
+        P2: Probabilities enter preferences linearly.
+      queries: ["expected utility risk aversion", "von Neumann-Morgenstern utility", "expected utility maximization choice"]
+    Q:
+      name: Prospect theory
+      statements:
+        Q1: Agents evaluate outcomes as gains and losses relative to a reference point, with loss aversion.
+        Q2: Agents weight probabilities nonlinearly.
+      queries: ["prospect theory", "loss aversion", "probability weighting function"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
+
+  cognition_computational_vs_enactive:
+    domain: cognitive science
+    P:
+      name: Classical computationalism
+      statements:
+        P1: Cognition is computation over internal representations.
+        P2: The mind is realized in the brain; the body and environment are inputs and outputs.
+      queries: ["computational theory of mind", "symbolic representation cognition", "language of thought"]
+    Q:
+      name: Enactive / radical embodied cognition
+      statements:
+        Q1: Cognition does not consist in manipulating internal representations.
+        Q2: Cognition is partly constituted by body-environment dynamics.
+      queries: ["enactive cognition", "radical embodied cognition", "extended mind sensorimotor"]
+    conflicts:
+      - {p: P1, q: Q1}
+      - {p: P2, q: Q2}
