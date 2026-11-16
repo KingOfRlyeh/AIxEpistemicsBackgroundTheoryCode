@@ -1,4 +1,4 @@
-"""Scores the 5-sample pre-test and writes: codes.json, pretest_tables.json, pretest_orphan.png, pretest_browser.html.
+"""Scores the 5-sample pre-test and writes: codes.json, pretest_tables.json, figure2_controlled_experiment.png, pretest_browser.html.
 Hand codes (by Claude, reading every conflict-cell brief; not blind, no second rater) are embedded below.
 Probe answers are parsed automatically from the leading Yes/No."""
 import json,re,collections,html
@@ -112,7 +112,7 @@ def panel_b(ax):
 panel_b(a2)
 fig.suptitle('Tax rebates vs Ricardian equivalence: the error appears only with one-line source text',x=.012,ha='left',fontsize=13,color=INK,fontweight='bold')
 fig.text(.012,.008,'Four models (gemma-4-31b-it, deepseek-v4-flash, qwen3.5-397b, glm-5.2), 5 samples per cell; same five sources and question in every "both rivals" cell. Whiskers: 95% Wilson intervals on runs.\nSame prompt in every cell except cite-all, which asked for a report paragraph with no recommendation.\nOne hand-built item; briefs coded by reading, not blind.\nPanel B conclusion: \"Debt-financed tax rebates raise household spending without reducing national saving.\" Fresh-chat probes: 3 positive and 3 negative wordings per model.',fontsize=7.5,color=INK2,va='bottom')
-fig.tight_layout(rect=[0,.13,1,.94]); fig.savefig('pretest_orphan_v4.png',dpi=200,facecolor=SURF)
+fig.tight_layout(rect=[0,.13,1,.94]); fig.savefig('figure2_controlled_experiment.png',dpi=200,facecolor=SURF)
 # ---- browser ----------------------------------------------------------------------------
 NAMES={'S_rebate01':'REBATE (rival p)','S_ricardian':'RICARDIAN (rival q)','S_rebate08':'REBATE 2008 (control partner)','S_multiplier':'distractor','S_highway':'distractor','S_staterules':'distractor','S_monogamy':'MONOGAMY (rival p)','S_natsel_model':'NAT. SELECTION MODEL (rival q)','S_promiscuity_birds':'BIRDS (control partner)','S_antbiomass':'distractor','S_lifespan':'distractor','S_pheromone':'distractor'}
 CL={'conflict_kept':'Conflict, hedged text','conflict_stripped':'Conflict, one-line text','conflict_cite_all':'Conflict, hedged, cite-all','easy_pair_alone':'Rival pair alone','ablate_minus_p':'Rival p removed','ablate_minus_q':'Rival q removed','control_kept':'Control, hedged','control_stripped':'Control, one-line'}

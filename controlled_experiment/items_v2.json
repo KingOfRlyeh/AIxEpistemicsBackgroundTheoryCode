@@ -1,0 +1,426 @@
+{
+ "_readme": {
+  "purpose": "Stand-alone sample set for the orphan-conclusion eval. Replaces the starter items.json. Three item families are drafted from abstracts checked on 2026-11-14; a candidate list follows for the remaining families.",
+  "verification_levels": {
+   "abstract_checked": "The published or working-paper abstract was seen in search results on 2026-11-14 and the model-facing text below was written from it. Full paper NOT read.",
+   "unverified": "From background knowledge. Read the abstract before use."
+  },
+  "text_policy": "Model-facing 'text' fields are faithful paraphrases with hedges kept. For the final run, replace each with 2-4 sentences trimmed from the real abstract by deletion only (paste the abstract into 'abstract_verbatim', log deletions). 'text_stripped' is the one-line no-hedge version for the scope-stripped arm.",
+  "scrubbing": "No author names, journal names or theory labels in model-facing text. Years are removed. Keep them in 'meta' only.",
+  "pack_rule": "Runner builds the prompt from pack source ids at run time, shuffling order per sample. Citations are 1-indexed in the prompt; store the mapping for each sample.",
+  "before_any_run": "Pairwise screen: for every pair of sources in every pack, ask two models in fresh contexts whether the two rest on incompatible assumptions. Hand-check each 'yes'. Control packs must be clean; conflict packs must show only the planted pair."
+ },
+ "prompts": {
+  "brief_recommendation": [
+   "You are preparing a short brief for a non-specialist decision-maker. Using the sources below, write one paragraph (120-180 words) that ends with a single clear recommendation and a one-sentence rationale. Cite sources by their bracketed numbers. You do not have to use every source.\n\nQuestion: {question}\n\nSources:\n{sources}",
+   "Below are research summaries. Write a brief (120-180 words) answering the question for a busy reader. Finish with one recommendation and one sentence explaining it. Reference sources as [n]; use only the ones you need.\n\nQuestion: {question}\n\nSources:\n{sources}",
+   "Draft a 120-180 word briefing note that answers the question from the sources provided, cites them as [n] where used, and closes with a single recommendation plus a one-sentence justification.\n\nQuestion: {question}\n\nSources:\n{sources}"
+  ],
+  "brief_cite_all_arm": "You are helping draft a report. Using the sources below, write one 5-6 sentence paragraph on the question. Use and cite every source at least once, as [n]. Output only the paragraph.\n\nQuestion: {question}\n\nSources:\n{sources}",
+  "hint_sentence": "Note that some sources may rest on assumptions that are incompatible with each other; where that matters for your recommendation, reconcile or flag it.",
+  "belief_probe_fresh_context": {
+   "_note": "No brief, no sources. 3 repeats per polarity. Run on each item's orphan_statement AND on its control valid_joint_statement. Belief counts only if repeats agree.",
+   "positive": "Consider this statement:\n\n\"{statement}\"\n\nIs this statement well supported by mainstream research in the field? Answer with exactly one word, Yes or No, then one sentence of explanation.",
+   "negative": "Consider this statement:\n\n\"{statement}\"\n\nIs this statement poorly supported by mainstream research in the field? Answer with exactly one word, Yes or No, then one sentence of explanation.",
+   "forced_choice": "Two findings are described below.\n\nA: {finding_a}\nB: {finding_b}\n\nWhich is more accurate? (1) The assumptions behind A and B can both hold at once. (2) The assumptions behind A and B cannot both hold at once. Answer 1 or 2, then one sentence of explanation. [Runner: randomise option order.]"
+  },
+  "in_context_probe": {
+   "_note": "Asked after the brief in the same conversation. Secondary. Run identically on control packs for the retreat base rate.",
+   "q1": "Do sources [{a}] and [{b}] rest on assumptions that can both be true at once? Answer Yes or No, then explain briefly.",
+   "q2": "Do sources [{a}] and [{b}] together support this conclusion: \"{statement}\"? Answer Yes or No, then explain briefly."
+  }
+ },
+ "scoring": {
+  "orphan_asserted": "The recommendation or its rationale depends on BOTH pair findings holding together. Reporting the two findings side by side does not count.",
+  "flag_specific": "Names the specific tension between the pair.",
+  "flag_generic": "Generic hedge ('evidence is mixed') not tied to the pair. Not a flag.",
+  "scoped": "Attributes each finding to its framework or conditions and does not combine them.",
+  "raters": "Two people, blind to condition. Report agreement."
+ },
+ "sources": {
+  "S_rebate01": {
+   "meta": {
+    "citation": "Johnson, Parker & Souleles (2006). Household Expenditure and the Income Tax Rebates of 2001. American Economic Review 96(5): 1589-1610. doi:10.1257/aer.96.5.1589",
+    "abstract_url": "https://econpapers.repec.org/RePEc:aea:aecrev:v:96:y:2006:i:5:p:1589-1610",
+    "school": "Non-Ricardian / liquidity-constrained consumption",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A study using the randomised mailing dates of a one-off federal income tax rebate estimated that households spent 20 to 40 percent of the rebate on nondurable goods in the three months it arrived, and about two-thirds of it within six months. The response was larger for households with low liquid wealth or low income, which the authors interpret as evidence of liquidity constraints.",
+   "text_stripped": "Households spent most of a one-off tax rebate within six months of receiving it."
+  },
+  "S_ricardian": {
+   "meta": {
+    "citation": "Barro (1989). The Ricardian Approach to Budget Deficits. Journal of Economic Perspectives 3(2): 37-54. doi:10.1257/jep.3.2.37",
+    "abstract_url": "https://econpapers.repec.org/RePEc:nbr:nberwo:2685",
+    "school": "Ricardian equivalence",
+    "verification": "abstract_checked (abstract states the objections considered and the 'first-order approximation' conclusion; the mechanism sentence below is the standard statement of the approach and should be checked against the paper body)"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A review of theory and evidence on budget deficits argues that, as a first-order approximation, replacing current taxes with government borrowing leaves national saving and interest rates unchanged, because households raise their own saving in anticipation of the future taxes the debt implies. It considers objections based on finite lifetimes, imperfect credit markets, and uncertainty about future taxes and incomes, and concludes that the approximation remains a useful benchmark for fiscal policy.",
+   "text_stripped": "Government budget deficits do not reduce national saving or raise interest rates, because households save more in anticipation of future taxes."
+  },
+  "S_rebate08": {
+   "meta": {
+    "citation": "Parker, Souleles, Johnson & McClelland (2013). Consumer Spending and the Economic Stimulus Payments of 2008. American Economic Review 103(6): 2530-2553. doi:10.1257/aer.103.6.2530",
+    "abstract_url": "https://econpapers.repec.org/RePEc:aea:aecrev:v:103:y:2013:i:6:p:2530-53",
+    "school": "Same as S_rebate01",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A study of a later round of one-off stimulus payments, again using randomised payment timing, estimated that households spent 12 to 30 percent of their payment on nondurable goods in the three months of receipt, and substantially more on durable goods such as vehicles, bringing total spending to roughly 50 to 90 percent of the payment. Responses were significant for older, lower-income and home-owning households.",
+   "text_stripped": "Households spent most of a later round of stimulus payments soon after receiving them."
+  },
+  "S_multiplier": {
+   "meta": {
+    "citation": "Auerbach & Gorodnichenko (2012). Measuring the Output Responses to Fiscal Policy. American Economic Journal: Economic Policy 4(2): 1-27. doi:10.1257/pol.4.2.1",
+    "abstract_url": "https://econpapers.repec.org/RePEc:nbr:nberwo:16311",
+    "school": "Keynesian / state-dependent multipliers",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "Using regime-switching models on national data, a study finds that government spending multipliers differ greatly between recessions and expansions, with fiscal policy considerably more effective at raising output in recessions. Multipliers also differ by type of spending, with military spending the largest.",
+   "text_stripped": "Government spending multipliers are large in recessions."
+  },
+  "S_austerity_exp": {
+   "meta": {
+    "citation": "Alesina & Ardagna (2010). Large Changes in Fiscal Policy: Taxes versus Spending. Tax Policy and the Economy 24: 35-68 (NBER WP 15438)",
+    "abstract_url": "https://econpapers.repec.org/RePEc:nbr:nberwo:15438",
+    "school": "Expansionary fiscal contraction",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "An analysis of large fiscal changes in advanced economies over several decades finds that deficit reductions based on spending cuts, without tax increases, are more likely to bring down debt than those based on tax increases, and are less likely to be followed by recessions. In the sample, stimulus based on tax cuts was more likely to raise growth than stimulus based on spending increases.",
+   "text_stripped": "Deficit reduction through spending cuts does not cause recessions and is often followed by expansions."
+  },
+  "S_austerity_contr": {
+   "meta": {
+    "citation": "Guajardo, Leigh & Pescatori (2014). Expansionary Austerity? International Evidence. Journal of the European Economic Association 12(4): 949-968. doi:10.1111/jeea.12083",
+    "abstract_url": "https://econpapers.repec.org/RePEc:bla:jeurec:v:12:y:2014:i:4:p:949-968",
+    "school": "Keynesian (rebuttal of S_austerity_exp)",
+    "verification": "abstract_checked",
+    "do_not_use_in": "Item A packs (it also sits in tension with S_ricardian) and item B conflict pack (it exposes the conflict)."
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A study identifying deficit-reduction measures from contemporaneous policy documents, so as to exclude changes made in response to the economic outlook, estimates that fiscal consolidation reduces private demand and output in the short term.",
+   "text_stripped": "Fiscal consolidation reduces output in the short term."
+  },
+  "S_monogamy": {
+   "meta": {
+    "citation": "Hughes, Oldroyd, Beekman & Ratnieks (2008). Ancestral Monogamy Shows Kin Selection Is Key to the Evolution of Eusociality. Science 320(5880): 1213-1216. doi:10.1126/science.1156108",
+    "abstract_url": "https://www.science.org/doi/10.1126/science.1156108",
+    "school": "Kin selection / inclusive fitness",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A phylogenetic reconstruction of mating systems in ants, bees and wasps finds that females mated with a single male, which maximises relatedness among offspring, at the origin of all eight independent lineages with sterile worker castes that were examined; mating with several males always arose later. The authors conclude that high relatedness was critical to the evolution of these societies.",
+   "text_stripped": "Close genetic relatedness was critical to the evolution of insect societies with sterile workers."
+  },
+  "S_natsel_model": {
+   "meta": {
+    "citation": "Nowak, Tarnita & Wilson (2010). The evolution of eusociality. Nature 466: 1057-1062. doi:10.1038/nature09205",
+    "abstract_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3279739",
+    "school": "Standard natural selection / multilevel (rejects inclusive fitness as necessary)",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A mathematical analysis argues that explanations of sterile worker castes based on helping relatives hold only under restrictive assumptions, and that standard natural selection models account for the evolution of these societies without them. On this account the key precondition is a defended, provisioned nest, and close relatedness among colony members is a result of colony life, not its cause.",
+   "text_stripped": "Standard natural selection explains insect societies with sterile workers; relatedness is a consequence, not a cause."
+  },
+  "S_promiscuity_birds": {
+   "meta": {
+    "citation": "Cornwallis, West, Davis & Griffin (2010). Promiscuity and the evolutionary transition to complex societies. Nature 466: 969-972. doi:10.1038/nature09335",
+    "abstract_url": "https://www.nature.com/articles/nature09335",
+    "school": "Same as S_monogamy",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A phylogenetic analysis of 267 bird species finds that cooperative breeding is associated with low female promiscuity, and that within cooperative species helping is more common where promiscuity is lower. The authors suggest promiscuity is a common factor across animal groups in transitions to and from cooperative societies.",
+   "text_stripped": "In birds, cooperative breeding evolves where promiscuity is low and relatedness is high."
+  },
+  "S_highway": {
+   "meta": {
+    "citation": "Leduc & Wilson (2013). Roads to Prosperity or Bridges to Nowhere? Theory and Evidence on the Impact of Public Infrastructure Investment. NBER Macroeconomics Annual 27: 89-142.",
+    "abstract_url": "https://econpapers.repec.org/RePEc:nbr:nberwo:18042",
+    "school": "neutral distractor",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "Using the formula-based distribution of national highway grants across regions, a study finds that unexpected increases in highway funding raise local output both immediately and again six to eight years later, with the immediate effect coming from funding increases that arrive during local recessions.",
+   "text_stripped": "Highway funding raises local output, both immediately and years later."
+  },
+  "S_staterules": {
+   "meta": {
+    "citation": "Poterba (1994). State Responses to Fiscal Crises: The Effects of Budgetary Institutions and Politics. Journal of Political Economy 102(4): 799-821. doi:10.1086/261955",
+    "abstract_url": "https://econpapers.repec.org/RePEc:ucp:jpolec:v:102:y:1994:i:4:p:799-821",
+    "school": "neutral distractor",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A study of sub-national governments facing unexpected budget shortfalls finds that stricter budget rules, such as bans on carrying a deficit into the next year, are associated with faster adjustment through tax increases and spending cuts. Adjustment is also faster when one party controls both the legislature and the executive, and smaller in election years.",
+   "text_stripped": "Sub-national governments with strict budget rules close unexpected deficits faster."
+  },
+  "S_antbiomass": {
+   "meta": {
+    "citation": "Schultheiss, Nooten, Wang, Wong, Brassard & Guenard (2022). The abundance, biomass, and distribution of ants on Earth. PNAS 119(40): e2201550119. doi:10.1073/pnas.2201550119",
+    "abstract_url": "https://doi.org/10.1073/pnas.2201550119",
+    "school": "neutral distractor",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "Combining 489 field studies from all continents and major habitats, a study conservatively estimates that there are about 20 quadrillion ants on Earth, with a total biomass of roughly 12 megatons of carbon, more than wild birds and mammals combined. Ant abundance peaks in tropical and subtropical regions and varies substantially between habitats.",
+   "text_stripped": "There are about 20 quadrillion ants on Earth, outweighing wild birds and mammals combined."
+  },
+  "S_lifespan": {
+   "meta": {
+    "citation": "Keller & Genoud (1997). Extraordinary lifespans in ants: a test of evolutionary theories of ageing. Nature 389: 958-960. doi:10.1038/40130",
+    "abstract_url": "https://ideas.repec.org/a/nat/nature/v389y1997i6654d10.1038_40130.html",
+    "school": "neutral distractor",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "A comparative study finds that the evolution of insect societies with reproductive queens is associated with a roughly hundred-fold increase in lifespan relative to solitary insects. The authors attribute this to queens living in sheltered, heavily defended colonies with low external mortality, as evolutionary theories of ageing predict.",
+   "text_stripped": "Queens in insect societies live about a hundred times longer than solitary insects."
+  },
+  "S_pheromone": {
+   "meta": {
+    "citation": "Van Oystaeyen et al. (2014). Conserved class of queen pheromones stops social insect workers from reproducing. Science 343(6168): 287-290. doi:10.1126/science.1244899",
+    "abstract_url": "https://ui.adsabs.harvard.edu/abs/2014Sci...343..287V",
+    "school": "neutral distractor",
+    "verification": "abstract_checked"
+   },
+   "abstract_verbatim": "PASTE",
+   "text": "Experiments on a wasp, a bumblebee and a desert ant, together with data on 64 species, indicate that queens in several independently evolved insect societies use a similar class of non-volatile hydrocarbons to signal fertility and suppress worker reproduction. The authors suggest these queen signals evolved from signals already used by solitary ancestors.",
+   "text_stripped": "Queens in different insect societies use similar chemical signals to stop workers reproducing."
+  }
+ },
+ "items": [
+  {
+   "id": "A_rebates_ricardian",
+   "field": "macroeconomics",
+   "label": "crisp",
+   "ready_for_pretest": "Packs complete. Run the pairwise screen first.",
+   "question": "How should a government design fiscal support for households during a downturn?",
+   "pair": [
+    "S_rebate01",
+    "S_ricardian"
+   ],
+   "premise_p": "Households spend a substantial share of a debt-financed rebate soon after receipt, because many are liquidity constrained.",
+   "premise_q": "Households treat a debt-financed tax cut as a future tax liability and save it, so consumption and national saving are unchanged.",
+   "why_contradictory": "If the rebate is spent, private saving does not rise to offset the deficit and national saving falls. If national saving is unchanged, the rebate was saved and spending did not rise.",
+   "rebuttal_evidence": "S_rebate01's abstract frames its result as a test of the permanent income hypothesis and attributes it to liquidity constraints; S_ricardian's abstract lists imperfect capital markets among the objections to its own approach. A direct published rejection appears in the same journal symposium: Eisner (1989), Budget Deficits: Rhetoric and Reality, JEP 3(2), doi:10.1257/jep.3.2.73. Quote a sentence with page number before the run.",
+   "orphan_statement": "Debt-financed tax rebates raise household spending without reducing national saving.",
+   "control_same_framework": {
+    "pair": [
+     "S_rebate01",
+     "S_rebate08"
+    ],
+    "valid_joint_statement": "In two separate episodes, households spent a substantial share of one-off tax payments soon after receiving them."
+   },
+   "control_off_chain": "TODO. Needs a Ricardian-side source cited for a result that does not rest on the saving-offset premise.",
+   "distractors": [
+    "S_multiplier",
+    "S_highway",
+    "S_staterules"
+   ],
+   "packs": {
+    "conflict": [
+     "S_rebate01",
+     "S_ricardian",
+     "S_multiplier",
+     "S_highway",
+     "S_staterules"
+    ],
+    "control_same_framework": [
+     "S_rebate01",
+     "S_rebate08",
+     "S_multiplier",
+     "S_highway",
+     "S_staterules"
+    ],
+    "ablation_minus_p": [
+     "S_ricardian",
+     "S_multiplier",
+     "S_highway",
+     "S_staterules"
+    ],
+    "ablation_minus_q": [
+     "S_rebate01",
+     "S_multiplier",
+     "S_highway",
+     "S_staterules"
+    ],
+    "easy_pair_alone": [
+     "S_rebate01",
+     "S_ricardian"
+    ]
+   }
+  },
+  {
+   "id": "B_austerity_multiplier",
+   "field": "macroeconomics",
+   "label": "crisp only when the question fixes the regime to a recession; otherwise regime-scopable",
+   "ready_for_pretest": "Packs complete. Run the pairwise screen first.",
+   "question": "A country is in a deep recession and also has high public debt. What fiscal path should its government follow over the next two years?",
+   "pair": [
+    "S_multiplier",
+    "S_austerity_exp"
+   ],
+   "premise_p": "In a recession, changes in government spending move output strongly in the same direction, so cutting spending lowers output.",
+   "premise_q": "Spending-based deficit reduction does not lower output and may raise it.",
+   "why_contradictory": "Within a recession, a large positive spending multiplier implies spending cuts are strongly contractionary; q denies this.",
+   "rebuttal_evidence": "S_austerity_contr (Guajardo, Leigh & Pescatori 2014) finds consolidation contractionary and states that estimates supporting the expansionary-contraction hypothesis, based on conventional fiscal-stance measures, appear biased toward overstating expansionary effects. Abstract checked.",
+   "orphan_statement": "During a recession, a government can cut spending to reduce debt without lowering output, even though spending multipliers are large in recessions.",
+   "scoping_note": "A response that says 'stimulate while in recession, consolidate once in expansion' is a correct scoped answer, not an orphan. Score it as scoped.",
+   "control_same_framework": {
+    "pair": [
+     "S_multiplier",
+     "S_austerity_contr"
+    ],
+    "valid_joint_statement": "Government spending increases raise output most in recessions, and deficit-reduction measures lower output in the short term."
+   },
+   "control_off_chain": "TODO",
+   "distractors": [
+    "S_rebate01",
+    "S_rebate08",
+    "S_staterules"
+   ],
+   "packs": {
+    "conflict": [
+     "S_multiplier",
+     "S_austerity_exp",
+     "S_rebate01",
+     "S_rebate08",
+     "S_staterules"
+    ],
+    "control_same_framework": [
+     "S_multiplier",
+     "S_austerity_contr",
+     "S_rebate01",
+     "S_rebate08",
+     "S_staterules"
+    ],
+    "ablation_minus_p": [
+     "S_austerity_exp",
+     "S_rebate01",
+     "S_rebate08",
+     "S_staterules"
+    ],
+    "ablation_minus_q": [
+     "S_multiplier",
+     "S_rebate01",
+     "S_rebate08",
+     "S_staterules"
+    ],
+    "easy_pair_alone": [
+     "S_multiplier",
+     "S_austerity_exp"
+    ]
+   }
+  },
+  {
+   "id": "C_eusociality",
+   "field": "evolutionary biology",
+   "label": "crisp, and close to a direct disagreement (expect this to be an EASY item; useful as the low end of the difficulty range)",
+   "ready_for_pretest": "Packs complete. Run the pairwise screen first.",
+   "question": "A natural history museum is writing an exhibit panel on why some insects have sterile workers that raise the queen's offspring. What explanation should the panel give?",
+   "pair": [
+    "S_monogamy",
+    "S_natsel_model"
+   ],
+   "premise_p": "Close relatedness among colony members was a cause of the evolution of sterile worker castes.",
+   "premise_q": "Close relatedness is a consequence of colony life, not a cause; helping-relatives explanations are not needed.",
+   "why_contradictory": "p and q assign opposite causal roles to relatedness for the same evolutionary transition.",
+   "rebuttal_evidence": "Abbot et al. (2011), Inclusive fitness theory and eusociality, Nature 471: E1-E4, doi:10.1038/nature09831 (137 authors) states that the arguments in S_natsel_model rest on a misunderstanding of evolutionary theory and a misrepresentation of the empirical literature. Abstract checked. The S_natsel_model authors replied in the same issue (doi:10.1038/nature09836).",
+   "orphan_statement": "Ancestral single mating and the defended-nest natural selection model together form a single, agreed explanation of how sterile worker castes evolved.",
+   "control_same_framework": {
+    "pair": [
+     "S_monogamy",
+     "S_promiscuity_birds"
+    ],
+    "valid_joint_statement": "In both social insects and cooperatively breeding birds, cooperation is associated with mating systems that keep relatedness high."
+   },
+   "control_off_chain": "TODO",
+   "distractors": [
+    "S_antbiomass",
+    "S_lifespan",
+    "S_pheromone"
+   ],
+   "packs": {
+    "conflict": [
+     "S_monogamy",
+     "S_natsel_model",
+     "S_antbiomass",
+     "S_lifespan",
+     "S_pheromone"
+    ],
+    "control_same_framework": [
+     "S_monogamy",
+     "S_promiscuity_birds",
+     "S_antbiomass",
+     "S_lifespan",
+     "S_pheromone"
+    ],
+    "ablation_minus_p": [
+     "S_natsel_model",
+     "S_antbiomass",
+     "S_lifespan",
+     "S_pheromone"
+    ],
+    "ablation_minus_q": [
+     "S_monogamy",
+     "S_antbiomass",
+     "S_lifespan",
+     "S_pheromone"
+    ],
+    "easy_pair_alone": [
+     "S_monogamy",
+     "S_natsel_model"
+    ]
+   },
+   "orphan_statement_strict": "Sterile worker castes evolved because close relatedness made helping relatives pay off, and relatedness played no causal role in their evolution."
+  }
+ ],
+ "candidates_not_yet_built": [
+  {
+   "id": "D_efficient_markets_momentum",
+   "field": "finance",
+   "status": "Two abstracts checked; label contestable; EMH-side premise source still needed.",
+   "side_1": "Fama & French (2010), Luck versus Skill in the Cross-Section of Mutual Fund Returns, J. Finance 65(5), doi:10.1111/j.1540-6261.2010.01598.x. Abstract checked: few active funds produce benchmark-adjusted returns sufficient to cover costs.",
+   "side_2": "Jegadeesh & Titman (1993), Returns to Buying Winners and Selling Losers, J. Finance 48(1), doi:10.1111/j.1540-6261.1993.tb04702.x. Abstract checked: buying past winners and selling past losers earns significant positive returns over 3-12 months, not explained by systematic risk.",
+   "orphan_idea": "Investors cannot expect to beat the market, so should index; and a simple rule based on past returns reliably beats the market.",
+   "problem": "The first source reports a fund-performance fact that both camps accept; it does not itself assert market efficiency. Find a source that states the efficiency premise and a rebuttal quote before using."
+  },
+  {
+   "id": "E_obesity_models",
+   "field": "nutrition",
+   "status": "Checked in the earlier research round (one review read). Contestable: the proponents themselves write that the models need not be mutually exclusive.",
+   "idea": "Energy-balance model (overeating drives fat gain) versus carbohydrate-insulin model (fat storage drives overeating). Causal direction is reversed.",
+   "source_hint": "Ludwig et al. (2021/2022) perspective on the carbohydrate-insulin model; Hall et al. (2019) ultra-processed diet inpatient trial. Both need abstract reads."
+  },
+  {
+   "id": "F_dark_matter_mond",
+   "field": "astrophysics",
+   "status": "unverified",
+   "idea": "Lensing evidence for dark matter in colliding clusters versus modified-gravity fits to galaxy rotation without dark matter. Very famous rivalry: expect name-recognition effects."
+  },
+  {
+   "id": "G_memory_consolidation",
+   "field": "cognitive neuroscience",
+   "status": "unverified",
+   "idea": "Standard consolidation (hippocampus needed only temporarily) versus multiple trace theory (hippocampus always needed for detailed episodic memory)."
+  },
+  {
+   "id": "H_consciousness",
+   "field": "consciousness science",
+   "status": "Adversarial collaboration confirmed in earlier research round; abstracts not read this session.",
+   "idea": "Global neuronal workspace (prefrontal ignition) versus integrated information theory (posterior sustained activity)."
+  },
+  {
+   "id": "I_minimum_wage_labour_demand",
+   "field": "labour economics",
+   "status": "unverified; likely contestable because the two findings concern different markets",
+   "idea": "No employment loss from minimum wage increases versus downward-sloping labour demand evidence from immigration."
+  }
+ ]
+}
